@@ -1,0 +1,419 @@
+/* ----------- RESET DE CSS -----------*/
+
+html {
+    box-sizing: border-box;
+}
+body {
+    
+    margin: 0px;
+    padding: 0px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0%;
+}
+
+
+/* -------------------------Menú propiedades----------------*/
+header {
+    width: 100%;
+}
+
+nav {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: #024959;
+    position: relative;
+    z-index: 30;
+}
+
+.menu_bar {
+    display: none;
+    position: relative;
+    z-index: 5;
+    
+    
+}
+
+nav ul {
+    overflow: hidden;
+    list-style: none;
+    
+}
+
+nav ul li {
+    float: left;
+    
+
+}
+
+nav ul li a {
+    color: #ffffff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight:bold
+}
+
+nav ul li span {
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    background: #037e8c;
+}
+
+
+/* --------------------------General----------------*/
+
+/* Cuando sólo existe un elemento html con ese nombre dentro de la página, usa un identificador y no una clase. Generalmente a las secciones se les da identificadores y no clases */
+.caja_izquierda {
+    float: left;
+    height: 600px;
+}
+.caja_derecha {
+    float: right;
+    height: 600px;
+}
+#caja_mision p {
+    font-size: 1.5em;
+}
+#colaboradores {
+    background-color: white;
+    text-align: center;
+}
+/* La siguiente estructura, es equivalente a decir:
+"Cuando encuentres una sección con nombre #nombre, y dentro de ella haya un elemento html del tipo .clase , entonces aplícale el siguiente estilo..." */
+#colaboradores .colaborador {
+    float: left;
+    padding: 40px;
+    margin: 0px auto;  /* Con esta configuración de márgen, lo que haces es que alineas automáticamente al centro del contenedor, y en las mediaqueries le das el ancho a cada elemento del tipo .colaborador */
+}
+#colaboradores .colaborador img {
+    border-radius: 150px;
+    width: 250px;
+}
+.colaborador p {
+    line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+
+/*  --- Parallax --- */
+
+
+#caja_mision {
+    width: 100%;
+    /*background: rgb(0,24,116);*/
+    /*background: linear-gradient(0deg, rgba(0,24,116,1) 0%, rgba(0,184,172,1) 100%);*/
+    background-position: center;
+    background-attachment: fixed;
+    clear: both;
+    /*color: white;*/
+    line-height: 2em;
+    height: 160vh;
+    overflow: hidden;
+    padding: 70vh 40px 0px 40px;
+}
+/* --------------------------Estilos Videos----------------------*/
+    
+
+/* --------------------------Estilos Tipográficos----------------------*/
+
+
+h1 { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 4rem;
+    font-weight:bold;
+    position: absolute;
+    text-align: center;
+    left: 15%;
+    right: 15%;
+    color: #ffffff;
+    text-shadow: 3px 4px 15px #0e1213;
+    top: 30%;
+}
+
+.equipo {
+    font-size: 25px;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    text-align: center;
+    padding: 1%;
+    background-color: cadetblue;
+}
+
+
+
+
+
+/* -----------------------------------MEDIA QUERIE MENU----------------------*/
+
+@media screen and (max-width: 800px) {
+     nav {
+        width: 65%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+    }
+
+     nav ul li {
+        display: inline-block;
+        float: none;
+        border-bottom: 1px solid rgba(225,225,255,.3);
+    }
+   .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar {
+        padding: 20px;
+        display: block;  
+        background: #024959;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; 
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        
+        padding: 20px;
+        background: #024959;
+        color: #ffffff;
+        text-decoration: none;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+    
+}
+
+
+
+/* -------------------MEDIA QUERIES varios----------------*/
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+       
+        position: relative;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight:bold;
+        position: absolute;
+        text-align: center;
+        left: 15%;
+        right: 15%; 
+        text-shadow: 3px 4px 15px #0e1213;
+        top: 12%; }
+    .caja_izquierda {
+        width: 80%;
+    }
+    .caja_derecha {
+        width: 80%;
+    }
+    .colaborador {
+        /* Al manejar el ancho en porcentajes, el navegador resuelve por si sólo el cuánto ancho debe darle dentro de la pantalla. */
+        /* A este le pongo 80% para que sólo muestre una persona */
+        width: 80%;
+    }
+    .texto_home {
+        background-size: auto 100%;
+    }
+}
+
+
+@media screen and (min-width: 601px) and (max-width: 1099px) {
+    h1 { 
+        position: relative;
+        font-size: 2.3rem;
+        text-align: center;
+        font-weight:bold;
+        position: absolute;
+        text-align: center;
+        left: 15%;
+        right: 15%;
+        text-shadow: 3px 4px 15px #0e1213;
+        top: 26%;
+    }
+    .caja_izquierda {
+        width: 49%;
+    }
+    .caja_derecha {
+        width: 49%;
+    }
+    .colaborador {
+        /* A este le pongo 50% para que sólo muestre 2 personas en todo el ancho de la ventana del navegador */
+        width: 50%;
+    }
+    .texto_home {
+        background-size: 100% auto;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    h1 {
+        font-size: 4rem;
+        font-weight:bold;
+        position: absolute;
+        text-align: center;
+        left: 15%;
+        right: 15%; 
+        text-shadow: 3px 4px 15px #0e1213;
+        top: 30%;
+    }
+    .caja_izquierda {
+        width: 49%;
+    }
+    .caja_derecha {
+        width: 49%;
+    }
+    .colaborador {
+        /* A este le pongo 33% para que muestre 3 personas en todo el ancho de la ventana del navegador. no te hagas chaquetas mentales con el 1% sobrante, ese ni se nota. */
+        width: 33%;
+    }
+    .texto_home {
+        background-size: 100% auto;
+    }
+}
+
+
+
+
+h2 {
+    font-size: 3.5rem;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+}
+
+
+.pmision {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+         
+}
+
+
+
+/*---------------------------------------Header-------------------------------------------*/
+
+
+
+
+/*----------------------------------images-----------------*/
+
+
+img {
+    max-width: 100%;
+}
+
+
+#texto_home {
+    background-image: url(../Image/pescador.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-block: 20%;
+    min-height: 40vh;
+    text-align: center;
+    /*background-color: #024959;*/
+   
+   
+  
+    
+    
+}
+
+.logo_eccopoli {
+    width: 20;
+    height: 20%;
+    position: absolute;
+    top: 2%;
+    left: 10%;  
+}
+
+
+
+/* --------------------------MEDIA QUERIES  CAJAS DE INTEGRANTES DE EQUIPO----------------------*/
+
+
+@media screen and (min-width: 800px) {
+
+    .caja_rafael,
+    .caja_pierre,
+    .caja_jesula,
+    .caja_travis,
+    .caja_vikram,
+    .caja_robert {
+    min-width: 2em;
+    display: inline-block;
+   
+}
+
+    .caja_rafael {
+        width: 33%;
+        }
+        
+    .caja_pierre {
+        width: 33%;
+        }
+
+     .caja_jesula {
+         width: 33%;
+         }
+
+     .caja_travis {
+         width: 33%;
+         }
+         
+
+     .caja_vikram {
+      width: 33%;}
+
+      .caja_robert {
+        width: 33%;}
+   
+}
+
+
+
+/* --------------------------Footer----------------------*/
+
+
+footer {
+
+    background-color: #15232a;
+    padding: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+    
+   }
+
+
+/* --------------------------Páginas----------------------*/
