@@ -1,0 +1,976 @@
+/* ----------- RESET DE CSS -----------*/
+
+html {
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(197, 207, 206) 100%);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
+    line-height: 1.2;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0%;
+}
+
+
+
+/* -------------------------LOGO ECCOPOLI----------------*/
+
+
+
+/* -------------------------Menú propiedades----------------*/
+header {
+    width: 100%;
+}
+
+ nav {
+    width: 90%;
+    max-width: 1000px;
+    /*margin: 20px auto;*/
+    background: #024959;
+    position: absolute;
+    left: 20%;
+    right: 25%;
+    z-index: 30;
+}
+
+.menu_bar {
+    display: none;
+    position: relative;
+    
+}
+
+nav ul {
+    overflow: hidden;
+    list-style: none;
+    
+}
+
+
+nav ul li {
+    float: left;
+}
+
+
+nav ul li a {
+    color: #ffffff;
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+}
+
+nav ul li span {
+    margin-right: 10px;
+}
+
+nav ul li a:hover {
+    background: #037e8c;}
+
+
+/* --------------------------INFORMATION----------------------*/
+
+.information {
+  padding: 0% 10% 5% 10%;
+}
+
+.desarrollo {
+  padding: 8% 0% 0% 0%;
+}
+
+
+/* --------------------------Estilos Tipográficos----------------------*/
+
+
+h1 { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 4rem;
+  font-weight:bold;
+  position: absolute;
+  text-align: center;
+  left: 15%;
+  right: 15%;
+  color: #ffffff;
+  text-shadow: 3px 4px 15px #0e1213;
+  top: 30%;
+}
+
+
+
+
+/*----------------------------------images-----------------*/
+
+
+img {
+  max-width: 100%;
+}
+
+
+#texto_home {
+background-image: url(../image/atardecer.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 80vh;
+  text-align: center;
+  /*background-color: #024959;*/
+
+}
+
+.logo_eccopoli {
+  width: 20;
+  height: 20%;
+  position: absolute;
+  top: 2%;
+  left: 10%;  
+}
+
+
+
+/**********************************    DESARROLLO SUSTENTABLE    *****************************/
+
+
+  h2 {
+    font-size: 3rem;
+    line-height: 1;
+    font: bold;
+    color:black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0% 0% 2.5% 0%;
+    }
+
+
+    h3{
+      font-size: 2rem;
+      line-height: 1;
+      font: bold;
+      color:black;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding: 2% 0% 3% 0%;
+      }
+
+
+      p{
+        font-family: open sans;
+        text-align: justify;
+        font-size: 1.5em;
+      }
+
+
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  
+}
+
+.wrapper div{
+ width: 300px;
+  height: 200px;
+  margin: 5px;
+  cursor: pointer;
+  border-top: 5px solid transparent;
+}
+
+.wrapper div:hover{
+  border-top: 5px solid white;
+}
+/*---------------------------------*/
+.box-1{
+  background-image: url(../image/Derechos/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-1.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+/*---------------------------------*/
+.box-2{
+  background-image: url(../image/Derechos/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-2.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-3{
+  background-image: url(../image/Derechos/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-3.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-4{
+  background-image: url(../image/Derechos/4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-4.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-5{
+  background-image: url(../image/Derechos/5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-5.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-6{
+  background-image: url(../image/Derechos/6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-6.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-7{
+  background-image: url(../image/Derechos/7.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-7.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-8{
+  background-image: url(../image/Derechos/8.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-8.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-9{
+  background-image: url(../image/Derechos/9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-9.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-10{
+  background-image: url(../image/Derechos/10.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-10.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-11{
+  background-image: url(../image/Derechos/11.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-11.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-12{
+  background-image: url(../image/Derechos/12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-12.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-13{
+  background-image: url(../image/Derechos/13.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-13.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-14{
+  background-image: url(../image/Derechos/14.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-14.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-15{
+  background-image: url(../image/Derechos/15.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-15.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-16{
+  background-image: url(../image/Derechos/16.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-16.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+
+@media screen and (max-width: 700px){
+  
+  h1{
+      font-size: 20px;
+  }
+  
+  .wrapper div{
+      width: 300px;
+      height: 100px;
+      margin: 5px;
+  }
+}
+ 
+/**************************************  EQUIDAD DE GENERO   ***********************************************/
+
+
+
+
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  
+}
+
+.wrapper div{
+ width: 300px;
+  height: 200px;
+  margin: 5px;
+  cursor: pointer;
+  border-top: 5px solid transparent;
+}
+
+.wrapper div:hover{
+  border-top: 5px solid white;
+}
+/*---------------------------------*/
+.box-17{
+  background-image: url(../image/genero/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-17.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+/*---------------------------------*/
+.box-18{
+  background-image: url(../image/genero/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-18.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-19{
+  background-image: url(../image/genero/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-19.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-20{
+  background-image: url(../image/genero/4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-20.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-21{
+  background-image: url(../image/genero/5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-21.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-21a{
+  background-image: url(../image/genero/1a.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-21a.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+
+/*---------------------------------*/
+.box-21b{
+  background-image: url(../image/genero/2a.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-21b.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-22{
+  background-image: url(../image/genero/6.jpg);
+  background-position: center;  
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-22.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+
+ 
+
+
+@media screen and (max-width: 700px){
+  
+  h1{
+      font-size: 20px;
+  }
+  
+  .wrapper div{
+      width: 300px;
+      height: 100px;
+      margin: 5px;
+  }
+}
+
+
+/*************************************  DESARROLLO DURABLE   *****************************************************/
+
+
+
+.wrapper{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+ 
+  
+}
+
+.wrapper div{
+ width: 300px;
+  height: 200px;
+  margin: 5px;
+  cursor: pointer;
+  border-top: 5px solid transparent;
+}
+
+.wrapper div:hover{
+  border-top: 5px solid white;
+}
+/*---------------------------------*/
+.box-23{
+  background-image: url(../image/derarrollo/1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-23.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+/*---------------------------------*/
+
+.box-24{
+  background-image: url(../image/derarrollo/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-24.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+/*---------------------------------*/
+
+
+.box-25{
+  background-image: url(../image/derarrollo/3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-25.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-26{
+  background-image: url(../image/derarrollo/4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-26.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-27{
+  background-image: url(../image/derarrollo/5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-27.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-28{
+  background-image: url(../image/derarrollo/6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-28.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-29{
+  background-image: url(../image/derarrollo/7.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-29.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-30{
+  background-image: url(../image/derarrollo/8.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-30.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-31{
+  background-image: url(../image/derarrollo/9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-31.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-32{
+  background-image: url(../image/derarrollo/10.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-32.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-33{
+  background-image: url(../image/derarrollo/11.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-33.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-34{
+  background-image: url(../image/derarrollo/12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-34.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-35{
+  background-image: url(../image/derarrollo/13.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-35.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-36{
+  background-image: url(../image/derarrollo/14.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-36.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+/*---------------------------------*/
+.box-37{
+  background-image: url(../image/derarrollo/15.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-37.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+.box-38{
+  background-image: url(../image/derarrollo/16.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 600ms cubic-bezier(1,0,0,1);
+  filter: grayscale();
+}
+
+.box-38.open{
+  width: 500px;
+  height: 300px;
+  filter: contrast();
+}
+
+
+/*---------------------------------*/
+
+
+
+
+@media screen and (max-width: 700px){
+  
+  h1{
+      font-size: 20px;
+  }
+  
+  .wrapper div{
+      width: 300px;
+      height: 100px;
+      margin: 5px;
+  }
+}
+
+
+
+
+/* --------------------------Footer----------------------*/
+
+
+footer {
+  background-color: #15232a;
+  padding: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  color: #ffffff;
+ }
+
+ 

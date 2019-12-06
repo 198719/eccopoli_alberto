@@ -17,56 +17,71 @@
 <body> 
  
     <header> 
-            
+ 
         <div class="menu_bar">
-            <a href="#" class="bt-menu"><span class="icon-menu"></span>Menu</a>
+            <a href="#" class="bt-menu"><span class="icon-menu"></span>ECCOPOLI</a>
         </div>
-        <nav>
+          <nav>
             <ul>
-                <li><a href="#"><span class="icon-home"></span>ECCOPOLI</a></li> 
-                <li><a href="#"><span class="icon-heart"></span>PILARES</a></li> 
-                <li><a href="#"><span class="icon-phone"></span>CONTACTO</a></li>
-                <li><a href="#"><span class="icon-file-text"></span>RESULTADOS</a></li>
-                <li><a href="#"><span class="icon-user-plus"></span>INVOLÚCRATE</a></li>
-                <li><a href="#"><span class="icon-earth"></span>IDIOMA</a></li>
-  
-            </ul>
+                    <li><a href="index.html"><span class="icon-home"></span>ECCOPOLI</a></li>
+                    <li><a href="pilares.html"><span class="icon-heart"></span>PILARES</a></li> 
+                   
+                    <li><a href="resultados-involucrate_fr.html"><span class="icon-file-text"></span>RESULTADOS - INVOLÚCRATE</a></li>
+                    <li><a href="contacto.html"><span class="icon-phone"></span>CONTACTO</a></li>
+                    
+                    <li><a href="index_fr.html"><span class="icon-home"></span>Français</a></li>
+                    <li><a href="index_en.html"><span class="icon-home"></span>English</a></li>
         </nav>
     </header>
     <main> 
-            <figure>
-                    <img class="logo_eccopoli" src="image/logo_eccopoli.svg" alt="Logo de eccopoli">
-             </figure>
+        <div class="wrapper">
+            <div class="box-1"></div>
+          </div>     
         <section id="texto_home">
             <h1>Eccopoli, Políticas Públicas, Derechos Humanos y Desarrollo Durable</h1>
            <!-- <video src="video/young-haitian-photographers-capture-haiti-in-a-new-light-national-geographic.mp4"></video> -->
+           <!--<figure>
+            <img class="logo_eccopoli" src="image/logo_eccopoli.svg" alt="Logo de eccopoli">
+         </figure> -->
+         
         </section >
         
         <section id="caja_mision">
+
+         <div class="container">
             <div class="caja_izquierda parallax_lento">
-                <h2>Trabajemos juntos</h2>
+                <h2 class="titulo">Trabajemos<br>juntos</h2>
                 <br><br>
                 <p class="pmision">Descubrir a tiempo y luchar<br>por garantizar las necesidades más importantes<br>de las comunidades más vulnerables,<br>es vital para acabar hacer un cambio significativo.</p>
                 <br><br>
-                <p>Somos una organización No-gubernamental (ONG) creada para identificar estas necesidades en comunidades de Haití, México y otros países de la región.</p>
-                <div style="width: 100%; height: 100px;"></div>
-                <img src="image/pintora.jpg" alt="Foto pintora">
-                <div style="width: 100%; height: 100px;"></div>
+                <blockquote class="cita">
+                <p>Somos una organización No-gubernamental (ONG) creada para identificar estas necesidades en comunidades de Haití, México y otros países de la región.</p></blockquote>
+                <div style="width: 100%; height: 120px;"></div>
+                <img src="image/ninas.jpg" alt="Foto pintora">
+                <div style="width: 100%; height: 120px;"></div>
                 <img src="image/boys.jpg" alt="Foto pintora">
-                <div style="width: 100%; height: 100px;"></div>
+                <div style="width: 100%; height: 120px;"></div> 
             </div>
+
+
+
+
             <div class="caja_derecha parallax_rapido">
+                <img src="image/girl.jpg" alt="Foto pintora">
+                <div style="width: 100%; height: 120px;"></div>
                 <img src="image/pintora.jpg" alt="Foto pintora">
-                <div style="width: 100%; height: 100px;"></div>
-                <img src="image/boys.jpg" alt="Foto pintora">
-                <div style="width: 100%; height: 100px;"></div>
+                <div style="width: 100%; height: 120px;"></div>
             </div>
             <div class="caja_izquierda"></div>
             <div class="caja_derecha">
                 <p>Cuando logramos nuestro objetivo podemos, eventualmente, generar importantes cambios en cuestiones de políticas públicas.</p>
                 <p>Al trabajar con comunidades a un nivel de base, Eccopoli es un actor importante en catalizar cambio y progreso a través de un desarrollo político y económico.</p>
             </div>
-            <div style="width: 100%; height: 100px; clear: both;"></div>
+            <div style="width: 100%; height: 150px; clear: both;"></div>
+
+        </div>
+
+       
         </section>
             
 
@@ -115,15 +130,38 @@
             <p class="probert">Mr Robert HONORÉ</p>
         </div>
         <div style="width: 100%; height: 1px; clear: both;"></div>
+
+
+        <div id="caja-descarga">
+                <p class="baja-info">
+                <strong>Baja toda la informacion de nuestro equipo </strong></p> 
+                <a href="../eccopoli_website/pdf/bio.pdf" class="descargar" download="bio.pdf"> Descargar Archivo</a>
+                </div>
+
+
+
     </section>
-     
+
     <footer>
-        <p>Diciembre 2019. @ Todos los Derechos Reservados ECCOPOLI</p>
+        <small>Diciembre 2019. @ Todos los Derechos Reservados a ECCOPOLI</small>
     </footer>
        
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="js/menu.js"></script>
-   
-    
+    <script src="js/croll/basicScroll.min.js"></script>
+    <script src="js/croll/inicia-scroll.js"></script>
+
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal().reveal('.colaborador', { origin: 'top', distance: '50px', delay: 700 });;
+    </script>
+
+    <!-- Script para imagenes principales -->   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
 </body>
 </html> 
