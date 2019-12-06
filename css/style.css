@@ -448,33 +448,16 @@ img {
 
 
 
-.wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .wrapper div{
-   width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-  
-  .box-1{
+
+#texto_home {
     background-image: url(../image/1-ok.jpg);
-    background-repeat: no-repeat;
-    transition: all 600ms cubic-bezier(1,0,0,1);
-    filter: grayscale();
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 80vh;
-  }
-  
-  .box-1.open{
-    width: 100%;
-    height: 100%x;
-    filter: contrast();
-  }
+      background-repeat: no-repeat;
+      background-size: 100%;
+      min-height: 80vh;
+      text-align: center;
+      /*background-color: #024959;*/
+    
+    }
 
 
 /****************************************************/
